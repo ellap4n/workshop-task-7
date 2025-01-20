@@ -1,26 +1,29 @@
-let x = 20
-let y = 20
-
 function setup() {
-  createCanvas(400, 400); 
-  background(0,210,20);
-  for (x = 0; x <5; x++) {
-    flower(random(20, 350), random (20, 375), random(0, 10) );
-  }
+  createCanvas(400, 400);  
 }
 
-function draw(){  
-}
+let x = 20
 
-function flower (x,y,size){
-  fill(210,10,130)
-  noStroke();
-  triangle(x,y+20,x+40,y+20,x+40,y+60)
-  noStroke();
-  triangle(x,y+100,x,y+60,x+40,y+60)
-  noStroke();  
-  triangle(x+40,y+100,x+40,y+60,100,y+100)
-  noStroke();
-  triangle(x+40,y+60,x+80,y+20,x+80,y+60)
-  noStroke();
+function draw(){
+  background(110,200,110);
+  fill (180,9,92);
+
+triangle(20,40,60,40,60,80)
+noStroke();
+
+triangle(20,120,20,80,60,80)
+noStroke();  
+
+triangle(60,120,60,80,100,120)
+noStroke();
+
+triangle(60,80,100,40,100,80)
+noStroke() 
+
+  
+triangle(160,40,200,40,200,80)
+  noStroke()
+  
+
+
 }
