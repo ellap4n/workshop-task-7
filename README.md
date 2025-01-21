@@ -1,6 +1,6 @@
 # Workshop-1
 
-https://mirow-l.github.io/Workshop-1/
+
 
 ## Work made for Workshop 1 (14/1/25)
 random(0,width), means that a number will be randomly selected for a function which Leo explained which I thought was cool.
