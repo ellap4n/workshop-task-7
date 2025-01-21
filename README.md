@@ -36,9 +36,12 @@ Luckily I emailed Leo about it and he sent me back an edited version of my own c
 - Some trouble I ran into was trying to get the new finished version website upload is I had accidentally pasted my simplified original version over the top of the completeled version, luckily I just pasted it in one more time and that sorted things out.
 
 <img width="1484" alt="Screenshot 2025-01-20 at 11 53 23 PM" src="https://github.com/user-attachments/assets/55cf5af1-ea19-4df4-bc1c-b03fa59f975c" />
-## A horrible sight, thank goodness I figured out what to do!
+### A horrible sight, thank goodness I figured out what to do!
 
-Okay so what I did to add to this is I massively simplified what I was attempting to do and used my simple flower and by using the "for" tool I made it possible for the flower to rotate, a skill I learnt from this p5.js example page: https://p5js.org/examples/transformation-rotate/
+## Pivot To Rotate (and utilising "for")
+
+- Okay so what I did to add to this is I massively simplified what I was attempting to do and used my simple flower and by using the "for" tool I made it possible for the flower to rotate, a skill I learnt from this p5.js example page: https://p5js.org/examples/transformation-rotate/
+- So now I have my simple flower rotating on the canvas which I think looks pretty dandy and it was really easy to implicate the rotate commands so I think I'll use it again in future works.
 
 
 
