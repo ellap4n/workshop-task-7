@@ -6,15 +6,17 @@ the URL for this workshop is:
 I was intrrigued by the rotation system, so my idea was to create a swirling galaxy of stars where each star was a class object - and having multiple create a galaxy. 
 
 ## Creating the Object
-![Screenshot 2025-01-27 180108](https://github.com/user-attachments/assets/045fc29f-7ff5-4b96-8dae-9c7a4150f769)
+![Screenshot 2025-01-27 180108](https://github.com/user-attachments/assets/a9895741-5b6c-49ec-944c-dc6828f4c042)
+
 First I followed the workshop video to roughly create a basic environment or a 'star' that I could develop further. 
 The co-ordinates of the stars were all variable based so I could introduced randomness later in the code, and this required just a bit of thinking and simple mathematics to do. 
 
 ## Movement
 I wanted the stars to move, and initially I had them simply bouncing off the walls. I simulated this with two stars, not creating a system yet to ensure that it worked. 
-![Screenshot 2025-01-27 182136](https://github.com/user-attachments/assets/63e20597-c603-477b-94be-b2cd52028e74)
+![Screenshot 2025-01-27 182136](https://github.com/user-attachments/assets/18a83472-170d-4489-90db-0942369859b9)
+
 the following code bounced the stars off the walls when they reached the 'edge' of the canvas
-![Screenshot 2025-01-27 182142](https://github.com/user-attachments/assets/c9e697db-3560-4083-bf36-a8bd7fa8b82b)
+![Screenshot 2025-01-27 182142](https://github.com/user-attachments/assets/11559fd0-c11f-43be-af8f-5fdb631cf52a)
 
 ### System Generation
 I wanted the stars to be added one by one, so the choices were an interval or button. Since the nature of the movement was quite repetitive, I thought user generation would increase the 'randomness' factor that simulated a real galaxy so I added a button which added another star into a galaxy array system everytime it was clicked. 
@@ -76,16 +78,18 @@ shrink() {
 }
 ```
 Adding Y value means that the star goes towards the middle, and once it reached the middle it would disappear. but the stars would glitch out as below:
-![Screenshot 2025-01-27 181539](https://github.com/user-attachments/assets/418da09b-9df2-464c-b8f7-e236052516de)
+![Screenshot 2025-01-27 181539](https://github.com/user-attachments/assets/727f37cd-02f9-4da5-9993-54e6a2ced76b)
 
 ## Fixing this issue
 I was stuck on this for a while before I decided to go back and reread both mine and miros code in detail. 
-![Screenshot 2025-01-27 220628](https://github.com/user-attachments/assets/dd7a69da-a220-465e-ad7a-a9bab07f2653)
+![Screenshot 2025-01-27 220628](https://github.com/user-attachments/assets/afdd6e2b-4166-4f0b-9fd2-71e247411279)
+
 this is the block of code that was responsible for the rotation, so I searched up the p5 documentation: https://p5js.org/examples/transformation-rotate/
 where I discovered that the rotation system existed at **0,0**, which had been translated to the middle of the canvas instead. This meant that the origin point had moved, and I was generating my stars at the centre of the canvas and they were moving out (addition) from there towards the canvas edges, rather than the opposite. 
 
 I changed my random position limits as follows, and deleted the unecessary shape rotation code
-![Screenshot 2025-01-27 220907](https://github.com/user-attachments/assets/b7a97b9f-c287-487e-aa08-82a2ad5cdba7)
+![Screenshot 2025-01-27 220907](https://github.com/user-attachments/assets/20371018-04aa-455d-9de1-4361dcb742b4)
+
 Once I changed this, the shrinking rotation worked as expected.
 I also removed the x-position movement so that the stars moved smoothly in a spiral towards the centre.
 
