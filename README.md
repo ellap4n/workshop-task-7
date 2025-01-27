@@ -1,6 +1,6 @@
 # Workshop 7
 I decided to do the open source workshop task using miros task 1 work - which involved a rotating 'flower' pattern. 
-the URL for this workshop is: 
+the URL for this workshop is: https://ellap4n.github.io/workshop-task-7/
 
 ## Initial Idea
 I was intrrigued by the rotation system, so my idea was to create a swirling galaxy of stars where each star was a class object - and having multiple create a galaxy. 
